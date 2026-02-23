@@ -8,8 +8,8 @@ This project demonstrates a secure VPC architecture in AWS, including:
 - Controlled network access via security groups
 
 ## How to Use / View
-- Project documentation is in 'Project_Plan.md'
-- Sreenshots and diagrams are in the 'images/' folder
+- Project documentation is in [Project Plan](Project_Plan.md)
+- Sreenshots and diagrams are in the `images/` folder
 
 ## Key Features
 - Secure network isolation
