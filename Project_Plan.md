@@ -36,8 +36,12 @@ This project demonstrates as ecure VPC architecture in AWS, including:
 ## Key Commands
 
 ```bash
+## Key Commands
+
+```bash
 # Connect to public server
 ssh -i ~/Downloads/secure-vpc-key.pem ec2-user@<Public-IP>
+
 # Copy key to public server
 scp -i ~/Downloads/secure-vpc-key.pem ~/Downloads/secure-vpc-key.pem ec2-user@<Public-IP>:/home/ec2-user/
 
@@ -46,14 +50,6 @@ chmod 400 secure-vpc-key.pem
 
 # Connect from public server → private server
 ssh -i secure-vpc-key.pem ec2-user@<Private-IP>
-
-![Public Admin Server](images/ec2-public-admin.png)
-![Private Admin Server](images/ec2-private-admin.png)
-![Public Admin Security Group](images/public-admin-sg.png)
-![Private Server Security Group](images/private-server-sg.png)
-![SSH: Computer → Public Admin](images/ssh-public-server.png)
-![SSH: Public Admin → Private Server](images/ssh-private-server.png)
-![VPC Diagram](images/vpc-diagram.png)
 ```
 ## Screenshots
 
@@ -63,4 +59,3 @@ ssh -i secure-vpc-key.pem ec2-user@<Private-IP>
 ![Private Server Security Group](images/private-server-sg.png)
 ![SSH: Computer → Public Admin](images/ssh-public-server.png)
 ![SSH: Public Admin → Private Server](images/ssh-private-server.png)
-![VPC Diagram](images/vpc-diagram.png)
