@@ -59,3 +59,4 @@ ssh -i secure-vpc-key.pem ec2-user@<Private-IP>
 ![Private Server Security Group](images/private-server-sg.png)
 ![SSH: Computer → Public Admin](images/ssh-public-server.png)
 ![SSH: Public Admin → Private Server](images/ssh-private-server.png)
+![VPC Diagram](images/vpc-diagram.png)
