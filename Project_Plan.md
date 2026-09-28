@@ -60,3 +60,6 @@ ssh -i secure-vpc-key.pem ec2-user@<Private-IP>
 ![SSH: Computer → Public Admin](images/ssh-public-server.png)
 ![SSH: Public Admin → Private Server](images/ssh-private-server.png)
 ![VPC Diagram](images/vpc-diagram.png)
+
+## Security Improvements (Lessons Learned)
+In this build, I copied the private key onto the public admin server so I could SSH to the private server. On review, I recognized this as a risk: if the bastion host were compromised, an attacker would gain the key to the private server. In a future build, I would keep the key only on my local machine and connect using SSH ProxyJump (ssh -i key.pem -J ec2-user@<Public-IP> ec2-user@<Private-IP>) or agent forwarding, so the key is never stored on an internet-facing host. I would also add VPC Flow Logs for visibility and consider AWS Systems Manager Session Manager to remove the need for open SSH.
