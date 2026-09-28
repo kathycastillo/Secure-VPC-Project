@@ -9,9 +9,9 @@ This project demonstrates a secure VPC architecture in AWS, including:
 
 ## How to Use / View
 - Project documentation is in [Project Plan](Project_Plan.md)
-- Sreenshots and diagrams are in the `images/` folder
+- Screenshots and diagrams are in the `images/` folder
 
 ## Key Features
 - Secure network isolation
-- Public sercer acting as a bastion host
+- Public server acting as a bastion host
 - Private server inaccessible from the internet
